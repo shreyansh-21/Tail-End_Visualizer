@@ -1,11 +1,15 @@
-import React from 'react'
+// src/App.jsx
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import VisualizerPage from "./pages/VisualizerPage";
 
-const App = () => {
+export default function App() {
   return (
-    <div>
-      Tail End 
-    </div>
-  )
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/visualize" element={<VisualizerPage />} />
+      </Routes>
+    </Router>
+  );
 }
-
-export default App
