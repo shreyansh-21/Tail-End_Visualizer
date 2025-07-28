@@ -1,4 +1,4 @@
-<h1>⏳ The Tail End Visualizer</h1>
+<h1><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Hourglass%20Not%20Done.png" alt="Hourglass Not Done" width="50" height="50" /> The Tail End Visualizer</h1>
 
 <blockquote>
   <p><strong>“When you realize how few times you’ll see the people you love, it changes everything.”</strong><br>
