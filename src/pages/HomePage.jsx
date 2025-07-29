@@ -1,21 +1,34 @@
-// src/pages/HomePage.jsx
-import { Link } from "react-router-dom";
+// pages/index.js
 import Spline from '@splinetool/react-spline';
-// import TypewriterHero from "../components/TypewriterHero";
+import { Typewriter } from 'react-simple-typewriter';
 
-export default function HomePage() {
+export default function Home() {
   return (
-    <div style={{ minHeight: "100vh", backgroundColor: "#F9FAFB", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", padding: "2rem" }}>
-      <h1 style={{ fontSize: "2.25rem", lineHeight: "2.5rem", fontWeight: "700", color: "#1F2937", marginBottom: "1rem" }}>Life in Weeks</h1>
-      <div style={{ position: "relative", overflow: "hidden", height: "23.75rem", width: "100%" }}>
-        <div style={{ position: "absolute", top: "0", right: "0", bottom: "-3.75rem", left: "0" }}>
+    <div className="relative h-screen w-full bg-[#0d0d0d] overflow-hidden">
+      
+      <div className="relative overflow-hidden h-95 w-full">
+        <div className="absolute inset-0 -bottom-15">
           <Spline scene="https://prod.spline.design/p9YDaDQsLRER8yPq/scene.splinecode" />
         </div>
       </div>
-      {/* <TypewriterHero /> */}
-      <Link to="/visualize" style={{ marginTop: "2rem", display: "inline-block", backgroundColor: "#1F2937", color: "#FFFFFF", padding: "0.75rem 1.5rem", borderRadius: "0.375rem", textDecoration: "none", transition: "background-color 0.3s" }} onMouseEnter={e => e.currentTarget.style.backgroundColor = "#374151"} onMouseLeave={e => e.currentTarget.style.backgroundColor = "#1F2937"}>
-        Visualize Your Time
-      </Link>
+
+      <div className="absolute top-10 left-0 w-full flex justify-center z-10">
+        <h1 className="text-white text-xl md:text-3xl text-center max-w-3xl px-4">
+          <Typewriter
+            words={[
+              "You have 52 weeks a year. That’s 4,160 weeks in an 80-year life.",
+              "And most of them are already behind you.",
+              "Make the rest count."
+            ]}
+            loop={false}
+            cursor
+            cursorStyle="|"
+            typeSpeed={45}
+            deleteSpeed={30}
+            delaySpeed={1500}
+          />
+        </h1>
+      </div>
     </div>
   );
 }
