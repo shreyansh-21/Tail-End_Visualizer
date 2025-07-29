@@ -1,10 +1,11 @@
 import Spline from '@splinetool/react-spline';
 import { Typewriter } from 'react-simple-typewriter';
-
+import TextTrail from '@/uiComponents/TextTrail/TextTrail';
+src/uiComponents
 export default function Home() {
   return (
     <div className="min-h-screen w-full bg-[#0d0d0d] text-white">
-
+      <TextTrail/>
       {/* Heading Section */}
       <div className="w-full flex justify-center p-6">
         <h1 className="text-2xl md:text-3xl font-bold">
