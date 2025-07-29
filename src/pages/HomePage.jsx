@@ -4,7 +4,7 @@ import { Typewriter } from 'react-simple-typewriter';
 export default function Home() {
   return (
     <div className="min-h-screen w-full bg-[#0d0d0d] text-white">
-      
+
       {/* Heading Section */}
       <div className="w-full flex justify-center p-6">
         <h1 className="text-2xl md:text-3xl font-bold">
@@ -13,9 +13,10 @@ export default function Home() {
       </div>
 
       {/* Spline Section (keep it immersive and as-is) */}
-      <div className="relative overflow-hidden h-[60vh] w-full">
+      <div className="relative overflow-hidden min-h-[60vh] w-full">
         <div className="absolute inset-0 -bottom-15">
-          <Spline scene="https://prod.spline.design/p9YDaDQsLRER8yPq/scene.splinecode" />
+          <Spline scene="https://prod.spline.design/p9YDaDQsLRER8yPq/scene.splinecode" style={{ pointerEvents: 'none' }}/>
+          
         </div>
       </div>
 
